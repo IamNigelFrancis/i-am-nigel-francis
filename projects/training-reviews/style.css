@@ -1,0 +1,124 @@
+body {
+  font-family: arial, sans-serif;
+  margin: 0 auto;
+  max-width: 820px;
+  background: #262626;
+}
+div {
+  height: 240px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 16px 16px 0 0;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 95px;
+  color: #6495ed;
+  margin: 60px 0 0 0;
+}
+
+.netyellow {
+    font-family: 'Londrina Shadow', cursive;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.net { 
+    color: #6495ed;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 38px;
+    font-weight: bold;
+
+}
+h2 {
+    text-align: center;
+    color: #bbbbbb;
+    margin: 0px 0 70px 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: lowercase;
+    font-size: 1.5em;
+}
+p {
+  font-family: verdana;
+  font-size: 1.05em;
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.7));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.7));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.7));
+  padding: 10px;
+  line-height: 23px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+.pHeader {
+    font-weight: bold;
+}
+small { opacity: 0; }
+.name { opacity: 0; }
+
+.show-description p { height: 190px; }
+.show-description small { opacity: 1; }
+.show-description .name { opacity: 1; }
+
+.html { background-image: url("images/html.png");  }
+.dash { background-image: url("images/dash.png"); }
+.codecademy { background-image: url("images/codecademy.png"); }
+.bento { background-image: url("images/bento.png"); }
+.codeschool { background-image: url("images/codeschool.png"); }
+.udemy { background-image: url("images/udemy.png"); }
+.lvs { background-image: url("images/lvs.png"); }
+.stanford { background-image: url("images/stanford.png"); }
+
+.price {
+  float: right;
+  color: #6495ed;
+  font-size: 16px;
+  }
+.name {
+  float: right;
+  color: #70db93;
+  font-size: 14px;
+  }
+footer {
+  font-size: large;
+  color: #aaaaaa;
+  text-align: center;
+  }
+a:link {
+    color: #70db93;
+    text-decoration: none;
+  }
+a:visited { color: #70db93; }
+
+a:hover { font-size: 18px }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div { margin: 20px 12px 0 12px; }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small { font-size: 16px; }
+  .name { font-size: 16px; }
+}

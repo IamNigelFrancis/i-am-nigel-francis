@@ -1,0 +1,603 @@
+@import  "reset.css";
+
+/*
+
+For use with CSS3 Foundations: Styling the Modern Web
+CSS3 Foundations Book: www.wiley.com/go/treehouse/css3foundations
+
+Project Files: 16-00
+
+W3C CSS Validator results for TextArea (CSS level 2.1)
+
+nigelfrancis ... there is a fare few erros in here due the book been written some time back. CCS3 has moved on!
+
+ */
+body {
+    background-color: #FFF;
+/*background-image: url("../images/bg-body.jpg");*/
+    margin: 1em auto 0;
+    max-width: 960px;
+    font: 66% "Roboto Condensed",Helvetica,Arial,sans-serif;
+}
+
+.group:before,.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+#header,#main,#footer {
+    font-size: 1.6em;
+/* inherited value (10px) x 1.6em = 16px */
+}
+
+h1,h2,h3,h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+#main {
+    background-color: #fff;
+    background-color: #fff;
+    border: #ccc solid 1px;
+    -webkit-box-shadow: 0 3px 8px 0 #ccc;
+    box-shadow: 0 3px 8px 0 #ccc;
+    padding: 2.5em;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+
+/*a:hover {
+    color: white;
+}*/
+.product {
+    float: none;
+    margin: 0 1em 1em 0;
+}
+
+.button {
+    background-color: #FF1903;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    padding: 1em;
+    font-weight: bolder;
+}
+
+a.button:link {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+blockquote {
+    position: relative;
+    text-align: justify;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+blockquote p:before {
+    content: "\201C";
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    font-size: 2em;
+}
+
+blockquote p:after {
+    content: "\201D";
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    font-size: 2em;
+}
+
+blockquote cite:before {
+    content: "-";
+}
+
+aside > h3 {
+    font-weight: 700;
+    margin: 0 0 1.6em;
+}
+
+p + .offer {
+    color: red;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.2),4px 4px 2px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+input[type="text"],input[type="email"] {
+    border: none;
+    -webkit-box-shadow: -3px 3px 2px 0 #ccc inset;
+    box-shadow: -3px 3px 2px 0 #ccc inset;
+    padding: .4em 1em;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: .8em;
+}
+
+input[type="submit"][class="button"] {
+    font-size: 1em;
+    cursor: pointer;
+    margin: 2em auto 1em;
+    padding: .8em;
+    display: block;
+    width: 100%;
+}
+
+input[type="submit"][class="button"]:hover {
+    background-color: #228b22;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus {
+    outline: #000 dotted 1px;
+}
+
+#content p:first-of-type:first-letter {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+#newsletter {
+    color: #fff;
+    border-radius: 8px;
+    border: #FF1903 solid 4px;
+    border: #FF1903 solid 4px;
+    background: url(../images/bg-newsletter.png) repeat 0 #00ACDF;
+    background: url(../images/icon-newsletter.png) no-repeat 91% 2%,url(../images/bg-newsletter.png) repeat 0 #00ACDF;
+    padding: 6%;
+    width: 88%;
+    margin-left: -4px;
+}
+
+#footer {
+/*background: #ccc url("../images/bg-footer.jpg");*/
+/*border-top: #999 dotted 4px;*/
+    margin-top: 1em;
+    padding: 1.4em 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.showcase .button {
+    background-image: -webkit-linear-gradient(top,##FF1903 0%,#FFF 100%);
+    background-image: -moz-linear-gradient(top,##FF1903 0%,#FFF 100%);
+    background-image: -o-linear-gradient(top,##FF1903 0%,#FFF 100%);
+    /*background-image: -ms-linear-gradient(top,##FF1903 0%,#FFF 100%);*/
+    background-image: linear-gradient(top,##FF1903 0%,#FFF 100%);
+    position: absolute;
+    top: 20%;
+    z-index: 9;
+    font-size: 1.6em;
+    right: 2.1875em;
+    margin-top: -26px;
+    letter-spacing: 2px;
+}
+
+.showcase .button:hover {
+    background-color: #228b22;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        z-index: 4;
+    }
+
+    16.666% {
+    /*2.5s*/
+        opacity: 0;
+        z-index: 4;
+    }
+
+    50% {
+    /*7.5s*/
+        opacity: 0;
+        z-index: -1;
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    from {
+        opacity: 1;
+        z-index: 4;
+    }
+
+    16.666% {
+    /*2.5s*/
+        opacity: 0;
+        z-index: 4;
+    }
+
+    50% {
+    /*7.5s*/
+        opacity: 0;
+        z-index: -1;
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+        z-index: 4;
+    }
+
+    16.666% {
+    /*2.5s*/
+        opacity: 0;
+        z-index: 4;
+    }
+
+    50% {
+    /*7.5s*/
+        opacity: 0;
+        z-index: -1;
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    from {
+        opacity: 1;
+        z-index: 4;
+    }
+
+    16.666% {
+    /*2.5s*/
+        opacity: 0;
+        z-index: 4;
+    }
+
+    50% {
+    /*7.5s*/
+        opacity: 0;
+        z-index: -1;
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeOut {
+    from {
+        opacity: 1;
+        z-index: 4;
+    }
+
+    16.666% {
+    /*2.5s*/
+        opacity: 0;
+        z-index: 4;
+    }
+
+    50% {
+    /*7.5s*/
+        opacity: 0;
+        z-index: -1;
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+.showcase ul {
+    background: #FF1903;
+    position: relative;
+    z-index: 9;
+}
+
+.showcase li {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-animation: fadeOut 15s ease-in-out 5s infinite forwards;
+    -moz-animation: fadeOut 15s ease-in-out 5s infinite forwards;
+    -o-animation: fadeOut 15s ease-in-out 5s infinite forwards;
+    animation: fadeOut 15s ease-in-out 5s infinite forwards;
+}
+
+.showcase ul:hover li {
+/* -webkit-animation-play-state:  paused; */
+/*commented out due to a bug in WebKit*/
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.showcase li:first-child {
+    z-index: 3;
+    position: relative;
+}
+
+.showcase li:nth-child(2) {
+    z-index: 2;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.showcase li:nth-child(3) {
+    z-index: 1;
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    -o-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+#content {
+    width: 65%;
+    margin: 0 auto;
+    float: left;
+}
+
+#header nav > ul {
+    border-radius: 20px;
+    border: #ccc solid 1px;
+}
+
+.showcase {
+    -webkit-box-shadow: 0 -3px 8px 0 #ccc;
+    box-shadow: 0 -3px 8px 0 #ccc;
+    background: #FF1903;
+    position: relative;
+}
+
+.small-logo a {
+    background: url(../images/cube-footer-logo.jpg) no-repeat center;
+    display: block;
+    min-height: 5px;
+    width: 162px;
+    padding: 5px;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+#header nav > ul > li {
+    background: #fff;
+    display: inline-block;
+}
+
+#header nav > ul > li:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#header nav > ul > li:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#header nav ul > li:hover {
+    background: #FF1903;
+}
+
+#header nav ul ul > li:hover {
+    background: #FF1903;
+}
+
+#header nav ul li a {
+    color: #000;
+    display: block;
+    padding: 10px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#header nav ul ul {
+/*style all lists below the top-level list*/
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none;
+    padding: 20px 0;
+    position: absolute;
+    min-width: 140px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+#header nav ul ul li {
+    position: relative;
+}
+
+#header nav ul ul ul {
+/*style all lists below the second-level list*/
+    border: 1px solid #CCC;
+    border-right: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0;
+    border-radius: 8px;
+    left: -100%;
+    top: -1px;
+}
+
+#header nav li:hover > ul {
+/*show the menu of the list item being hovered over*/
+    visibility: visible;
+}
+
+#header {
+    margin: 0 0 .5em;
+}
+
+#header .logo {
+    margin: 2.4em 0;
+    float: left;
+    width: 240px;
+}
+
+#header nav {
+    margin-top: 2em;
+    float: right;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+aside {
+    margin: 0 0 2em;
+}
+
+#content h1,#content h2,#content h3,#content h4 {
+    margin: 0 0 1.6em;
+}
+
+#content p,#content ul {
+    margin: 0 0 1.25em;
+    line-height: 1.4em;
+}
+
+blockquote cite {
+    margin: .625em 0 0;
+    float: right;
+}
+
+#newsletter h3 {
+    margin: 0 0 1em;
+}
+
+#newsletter label {
+    margin: 1.5em 0 0;
+}
+
+label {
+    display: block;
+    font-weight: 900;
+    font-size: .8em;
+}
+
+.aside {
+    margin: 0 0 2em;
+}
+
+.post h3 {
+    margin: 0 0 1em;
+}
+
+.post h3 img {
+    margin: 0 .5em 0 0;
+}
+
+.testimonals {
+    padding: 1em 0 0;
+}
+
+.post {
+    height: 320px;
+    overflow-y: scroll;
+    margin: 70px 0;
+}
+
+.benefits {
+    clear: left;
+}
+
+.benefits ul {
+    color: #38AEDB;
+    list-style: disc inside url(../images/check.png);
+}
+
+.sidebar {
+    float: right;
+    width: 25%;
+}
+
+#footer .small-logo {
+    float: left;
+}
+
+#footer .back-to-top {
+    float: right;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #38AEDB;
+}
+
+/* Mobile (portrait and landscape)*/
+@media only screen and (max-device-width: 480px) {
+    #header .logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+
+    #header {
+        padding: 0 10px;
+    }
+
+    #header nav,.sidebar,#content {
+        float: none;
+        width: 100%;
+    }
+
+    .banner-ad {
+        display: none;
+    }
+}
