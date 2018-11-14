@@ -2,4 +2,5 @@
 My Development Website
 
 ![Front Page](/images/iamnigelfrancis-page.JPG)
-![iamnigellfrancis.com](https://iamnigelfrancis.com)
+
+[iamnigelfrancis.com](https://iamnigelfrancis.com)
