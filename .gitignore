@@ -1,0 +1,12 @@
+# gitignore files for i-am-nigel-francis
+
+# Folders
+.vs
+.vscode
+
+# Files
+
+.htaccess
+robots.txt
+sitemap.xml
+google9b54c0d2ed544193.html
