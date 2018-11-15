@@ -12,8 +12,5 @@ My development through the eyes of Trello!
 
 ![Front Page](/images/trello-board-blue.jpg)
 
-![Front Page](/images/trello-board-grey.jpg)
+<!-- ![Front Page](/images/trello-board-grey.jpg) -->
 
-<br>
-
- <a href="https://trello.com/b/OIZp4RNd/development"><img src="images/trello-board-blue.jpg""></a>
