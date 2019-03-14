@@ -1,12 +1,14 @@
 /* STYLE*/
 /* ------------------------------------------------- */
-
 body {
    background: var(--background);
-   /*margin: 2.5rem 14rem;*/
    line-height: 1.4;
+}
 
-
+html {
+   box-sizing: border-box;
+   font-family: calibri;
+   color: var(font-dark);
 }
 
 .wrapper {
@@ -15,75 +17,54 @@ body {
    grid-gap: 20px;
 }
 
-
-@media(max-width: 1400px) {
-   .wrapper {
-      margin: 1.2rem 8rem;
-   }
-
-   .form {
-      grid-template-columns: 1fr;
-   }
-}
-
-html {
-   box-sizing: border-box;
-   font-family: Helvetica;
-   color: var(font-dark);
-}
-
-
-
-
-
-
-
-
 :root {
    --font-dark: black;
    --font-light: white;
-   --icons: #242424;
+   --header: #242424;
    --foreground: #26b3b3;
    --background: white;
    --border: solid 7px white
 }
 
-
 h1 {
-   font-size: 2rem;
+   font-size: 2.5rem;
    color: white;
    text-align: center;
 }
 
 h2 {
-   font-size: 1.3rem;
+   font-size: 1.5rem;
    color: white;
    text-align: center;
 }
 
 h3 {
-   font-size: 1.4rem;
+   font-size: 1.6rem;
    font-weight: 600;
    text-align: center;
 }
 
-/* LABEL */
+/* HEADER */
+.header {
+   height: auto;
+   background: var(--header);
+   padding: 1.2rem .4rem 1.2rem 0;
+}
 
+/* LABEL */
 label {
-   font-size: 1rem;
+   font-size: 1.1rem;
    margin-top: .6rem;
    display: inline-block;
    font-weight: 600;
 }
 
 label-1 {
-   font-size: .9rem;
-
-
+   font-size: 1.1rem;
 }
 
 label-2 {
-   font-size: 1rem;
+   font-size: 1.1rem;
    margin-top: 1rem;
    display: inline-block;
    font-weight: 600;
@@ -102,17 +83,12 @@ input[type=radio],
 
 textarea {
    height: 8rem;
-
 }
 
-
-
-
-
-p {
-   font-size: 1.1rem;
+/*p {
+   font-size: 1.5rem;
    line-height: 1.7rem;
-}
+}*/
 
 .form,
 .header,
@@ -120,33 +96,11 @@ footer {
    border-radius: .5rem;
 }
 
-/* HEADER */
-.header {
-   height: auto;
-   background: var(--icons);
-
-   padding: 1.2rem .4rem 1.2rem 0;
-}
-
-
-
-
-
-
-/* FORM */
-
+/* COMMENT */
 .form {
    background: var(--foreground);
    padding: 2rem;
 }
-
-
-
-
-
-
-
-
 
 input,
 input[type=text],
@@ -180,17 +134,22 @@ input[type=submit]:hover {
    font-size: .9rem;
 }
 
-/* FOOTER */
+/* SUBMIT */
 
+.button {
+   font-weight: 600;
+}
+
+/* FOOTER */
 footer {
-   background: var(--icons);
+   background: var(--header);
    color: var(--font-light);
    padding: 1.4rem;
    text-align: center;
 }
 
 footer p {
-   font-size: .8rem;
+   font-size: 1rem;
 }
 
 a {
@@ -202,18 +161,20 @@ a:hover {
    color: var(--background);
 }
 
-
 /*MEDIA QUERYS*/
-
-
-@media(max-width:500px) {
-   .top-container {
-      grid-template-areas: 'showcase''top-box-a''top-box-b';
+@media(max-width: 1400px) {
+   .wrapper {
+      margin: 1.2rem 8rem;
    }
 }
 
-@media(max-width:460px) {
-   body {
-      margin: 20px;
+@media(max-width:600px) {
+   .wrapper {
+      margin: 1.2rem 2rem;
    }
-}
+
+   @media(max-width:400px) {
+      .wrapper {
+         margin: .5rem 1rem;
+      }
+   }
