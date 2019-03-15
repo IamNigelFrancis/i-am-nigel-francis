@@ -4,19 +4,16 @@ body {
    background: var(--background);
    line-height: 1.4;
 }
-
 html {
    box-sizing: border-box;
-   font-family: calibri;
+   font-family: open sans;
    color: var(font-dark);
 }
-
 .wrapper {
    display: grid;
    margin: 2rem 18rem;
    grid-gap: 20px;
 }
-
 :root {
    --font-dark: black;
    --font-light: white;
@@ -25,83 +22,66 @@ html {
    --background: white;
    --border: solid 7px white
 }
-
 h1 {
    font-size: 2.5rem;
    color: white;
    text-align: center;
 }
-
 h2 {
    font-size: 1.5rem;
-   color: white;
    text-align: center;
 }
-
 h3 {
    font-size: 1.6rem;
    font-weight: 600;
    text-align: center;
 }
-
 /* HEADER */
-.header {
+#header {
    height: auto;
    background: var(--header);
    padding: 1.2rem .4rem 1.2rem 0;
 }
-
 /* LABEL */
-label {
+#name-label, 
+#email-label, 
+#number-label, 
+#dropdown,
+#radio-label,
+#checkbox-label,
+#message-label
+ {
    font-size: 1.1rem;
    margin-top: .6rem;
    display: inline-block;
    font-weight: 600;
 }
-
-label-1 {
-   font-size: 1.1rem;
+.radio,
+.checkbox{
+   font-size: 1.05rem;
 }
-
-label-2 {
-   font-size: 1.1rem;
-   margin-top: 1rem;
-   display: inline-block;
-   font-weight: 600;
-}
-
 .inline-radio {
    display: flex;
    margin-top: .4rem;
    margin-left: 1.2rem;
 }
-
 input[type=radio],
 [type=checkbox] {
    height: 1.2rem;
 }
-
 textarea {
    height: 8rem;
 }
-
-/*p {
-   font-size: 1.5rem;
-   line-height: 1.7rem;
-}*/
-
-.form,
-.header,
+#survey-form,
+#header,
 footer {
    border-radius: .5rem;
 }
-
-/* COMMENT */
-.form {
+/* MESSAGE */
+#survey-form {
    background: var(--foreground);
    padding: 2rem;
 }
-
 input,
 input[type=text],
 select,
@@ -115,7 +95,12 @@ textarea {
    margin-bottom: 6px;
    resize: vertical;
 }
-
+#message {
+   font-size: 1.1rem;
+   margin-top: 1rem;
+   display: inline-block;
+   font-weight: 600;
+}
 input[type=submit] {
    background-color: #ccc;
    color: #000;
@@ -124,22 +109,17 @@ input[type=submit] {
    border-radius: 6px;
    cursor: pointer;
 }
-
 input[type=submit]:hover {
    background-color: #242424;
    color: #fff;
 }
-
 ::placeholder {
    font-size: .9rem;
 }
-
 /* SUBMIT */
-
 .button {
    font-weight: 600;
 }
-
 /* FOOTER */
 footer {
    background: var(--header);
@@ -147,32 +127,26 @@ footer {
    padding: 1.4rem;
    text-align: center;
 }
-
 footer p {
    font-size: 1rem;
 }
-
 a {
    color: var(--foreground);
    text-decoration: none;
 }
-
 a:hover {
    color: var(--background);
 }
-
 /*MEDIA QUERYS*/
 @media(max-width: 1400px) {
    .wrapper {
       margin: 1.2rem 8rem;
    }
 }
-
 @media(max-width:600px) {
    .wrapper {
       margin: 1.2rem 2rem;
    }
-
    @media(max-width:400px) {
       .wrapper {
          margin: .5rem 1rem;

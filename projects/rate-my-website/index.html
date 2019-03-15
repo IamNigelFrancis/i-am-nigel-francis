@@ -13,62 +13,64 @@
    <!-- HTML5 RESET http://html5doctor.com/html-5-reset-stylesheet/ -->
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
-   <!--   <link rel="stylesheet" href="css/style.min.css">-->
+
    <title>NF | Rate My Website</title>
 </head>
 
 <body>
    <div class="wrapper">
+     
       <!-- HEADER-->
       <nav>
-         <div class="header">
+         <div id="header">
             <h1>RATE MY WEBSITE</h1>
             <h2><a href="https://iamnigelfrancis.com/index.html" target="_blank">iamnigelfrancis.com</a></h2>
          </div>
       </nav>
+      
       <!-- FORM -->
       <section class="form">
-         <div class="form">
-            <form action="https://formspree.io/iamnigelfrancis@mail.com" method="POST">
-               <h3>SURVEY FORM</h3>
-               <hr>
-               <label>Name</label>
-               <input type="text" name="name">
-               <label>Email</label>
-               <input type="email" name="_replyto">
-               <label>Age</label>
-               <input type="text" name="age">
-               <label>What is you current role?</label>
-               <select>
-                  <option label="Student Developer"></option>
-                  <option label="Employed Developer"></option>
-                  <option label="Freelance Developer"></option>
-               </select>
-               <label>Experience rating</label>
-               <group class="inline-radio">
-                  <label-1>Poor</label-1><input type="radio" name="poor">
-                  <label-1>Fair</label-1><input type="radio" name="fair">
-                  <label-1>Good</label-1><input type="radio" name="good">
-                  <label-1>Excellent</label-1><input type="radio" name="excellent">
-               </group>
-               <label>Would you share my website?</label>
-               <group class="inline-radio">
-                  <label-1>No</label-1><input type="radio" name="no">
-                  <label-1>Maybe</label-1><input type="radio" name="maybe">
-                  <label-1>Yes</label-1><input type="radio" name="yes">
-                  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="IamNigelFrancis" data-show-count="false">Tweet</a>
-                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-               </group>
-               <form>
-                  <label-2>Any suggestions for improving it?</label-2>
-                  <textarea name="message" placeholder="This is only a test site. The submit does not work!"></textarea>
-               </form>
-               <input class="button" type="submit" value="SUBMIT">
-               
-               <br>
-            </form>
-         </div>
+         <form id="survey-form">
+            <h3>SURVEY FORM</h3>
+            <hr>
+            <label id="name-label">Name</label>
+            <input type="text" name="name" placeholder="Enter your name">
+            <label id="email-label">Email</label>
+            <input type="email" name="_replyto" placeholder="Enter your email">
+            <label id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Enter your age">
+
+            <label id="dropdown">What is your current role?</label>
+            <select>
+               <option label="Student Developer"></option>
+               <option label="Employed Developer"></option>
+               <option label="Freelance Developer"></option>
+            </select>
+
+            <label id="radio-label">Experience rating</label>
+            <div class="inline-radio">
+               <label class="radio">Poor</label><input type="radio" name="radio-buttons" value="1">
+               <label class="radio">Fair</label><input type="radio" name="radio-buttons" value="2">
+               <label class="radio">Good</label><input type="radio" name="radio-buttons" value="3">
+               <label class="radio">Excellent</label><input type="radio" name="radio-buttons" value="4">
+            </div>
+
+            <label id="checkbox-label">What could I add to my website?</label>
+            <div class="inline-radio">
+               <label class="checkbox">JavaScript</label><input type="checkbox" name="checkbox" value="JavaScript">
+               <label class="checkbox">Ruby</label><input type="checkbox" name="checkbox" value="Ruby">
+               <label class="checkbox">Python</label><input type="checkbox" name="checkbox" value="Python">
+               <label class="checkbox">C#</label><input type="checkbox" name="checkbox" value="C#">
+            </div>
+
+            <label id="message">Any suggestions?</label>
+            <textarea name="message" placeholder="This is purely a demonstration page. The submit does not work!"></textarea>
+            <input class="button" type="submit" value="SUBMIT">
+            <br>
+         </form>
       </section>
+      
+      <!-- FOOTER -->
       <footer>
          <p>&#169; 2019&nbsp; | &nbsp;Built with &#x2764; &nbsp;by <a href="https://iamnigelfrancis.com" target="blank">iamnigelfrancis.com</a></p>
       </footer>
