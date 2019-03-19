@@ -43,22 +43,21 @@ h3 {
    padding: 1.2rem .4rem 1.2rem 0;
 }
 /* LABEL */
-#name-label, 
-#email-label, 
-#number-label, 
+#name-label,
+#email-label,
+#number-label,
 #dropdown,
 #radio-label,
 #checkbox-label,
-#message-label
- {
-   font-size: 1.1rem;
+#message-label {
+   font-size: 1rem;
    margin-top: .6rem;
    display: inline-block;
    font-weight: 600;
 }
 .radio,
-.checkbox{
-   font-size: 1.05rem;
+.checkbox {
+   font-size: .9rem;
 }
 .inline-radio {
    display: flex;
@@ -128,7 +127,7 @@ footer {
    text-align: center;
 }
 footer p {
-   font-size: 1rem;
+   font-size: .8rem;
 }
 a {
    color: var(--foreground);
@@ -143,12 +142,17 @@ a:hover {
       margin: 1.2rem 8rem;
    }
 }
-@media(max-width:600px) {
+@media(max-width: 1000px) {
+   .wrapper {
+      margin: 1.2rem 5rem;
+   }
+}
+@media(max-width:800px) {
    .wrapper {
       margin: 1.1rem 2rem;
    }
    @media(max-width:400px) {
       .wrapper {
-         margin: .1rem 1rem;
+         margin: 1rem 1rem;
       }
    }
