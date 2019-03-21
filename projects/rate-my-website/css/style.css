@@ -3,17 +3,21 @@
 body {
    background: var(--background);
    line-height: 1.4;
+   font-size: 16px;
 }
+
 html {
    box-sizing: border-box;
    font-family: open sans;
    color: var(font-dark);
 }
+
 .wrapper {
    display: grid;
    margin: 2rem 18rem;
    grid-gap: 20px;
 }
+
 :root {
    --font-dark: black;
    --font-light: white;
@@ -22,26 +26,35 @@ html {
    --background: white;
    --border: solid 7px white
 }
+
 h1 {
    font-size: 2.5rem;
    color: white;
    text-align: center;
 }
+
 h2 {
-   font-size: 1.5rem;
+   font-size: 1.4rem;
    text-align: center;
 }
+
 h3 {
    font-size: 1.6rem;
    font-weight: 600;
    text-align: center;
 }
+
 /* HEADER */
 #header {
    height: auto;
    background: var(--header);
    padding: 1.2rem .4rem 1.2rem 0;
 }
+
+hr {
+   margin: 20px 0 20px 0;
+}
+
 /* LABEL */
 #name-label,
 #email-label,
@@ -55,32 +68,39 @@ h3 {
    display: inline-block;
    font-weight: 600;
 }
+
 .radio,
 .checkbox {
    font-size: .9rem;
 }
+
 .inline-radio {
    display: flex;
    margin-top: .4rem;
    margin-left: 1.2rem;
 }
+
 input[type=radio],
 [type=checkbox] {
    height: 1.2rem;
 }
+
 textarea {
    height: 8rem;
 }
+
 #survey-form,
 #header,
 footer {
    border-radius: .5rem;
 }
+
 /* MESSAGE */
 #survey-form {
    background: var(--foreground);
    padding: 2rem;
 }
+
 input,
 input[type=text],
 select,
@@ -94,12 +114,14 @@ textarea {
    margin-bottom: 6px;
    resize: vertical;
 }
+
 #message {
    font-size: 1.1rem;
    margin-top: 1rem;
    display: inline-block;
    font-weight: 600;
 }
+
 input[type=submit] {
    background-color: #ccc;
    color: #000;
@@ -108,17 +130,21 @@ input[type=submit] {
    border-radius: 6px;
    cursor: pointer;
 }
+
 input[type=submit]:hover {
    background-color: #242424;
    color: #fff;
 }
+
 ::placeholder {
    font-size: .9rem;
 }
+
 /* SUBMIT */
 .button {
    font-weight: 600;
 }
+
 /* FOOTER */
 footer {
    background: var(--header);
@@ -126,31 +152,38 @@ footer {
    padding: 1.4rem;
    text-align: center;
 }
+
 footer p {
-   font-size: .8rem;
+   font-size: .7rem;
 }
+
 a {
    color: var(--foreground);
    text-decoration: none;
 }
+
 a:hover {
    color: var(--background);
 }
+
 /*MEDIA QUERYS*/
 @media(max-width: 1400px) {
    .wrapper {
       margin: 1.2rem 8rem;
    }
 }
+
 @media(max-width: 1000px) {
    .wrapper {
-      margin: 1.2rem 5rem;
+      margin: 1.2rem 4rem;
    }
 }
+
 @media(max-width:800px) {
    .wrapper {
       margin: 1.1rem 2rem;
    }
+
    @media(max-width:400px) {
       .wrapper {
          margin: 1rem 1rem;
