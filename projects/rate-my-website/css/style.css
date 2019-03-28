@@ -16,6 +16,7 @@ html {
    display: grid;
    margin: 2rem 18rem;
    grid-gap: 20px;
+   box-sizing: border-box;
 }
 
 :root {
