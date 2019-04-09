@@ -73,7 +73,7 @@ and my development through the eyes of [TRELLO](https://trello.com/b/OIZp4RNd/de
 [UDEMY - Advanced CSS and Sass: #Flexbox, Grid, Animations ...]: https://www.udemy.com/advanced-css-and-sass/learn/v4/content
 [UDEMY - Web Design For Web Developers]: https://www.udemy.com/web-design-secrets/
 [MIKE DANE - Learn Python]: https://www.mikedane.com/programming-languages/python/
-[UDACITY - What Is Programming]: https://classroom.udacity.com/courses/ud994
+[UDACITY - What Is Programming]: https://eu.udacity.com/course/what-is-programming--ud994
 [WES BOS - CSS GRID]: https://cssgrid.io/
 [SOLOLEARN - PHP]: https://www.sololearn.com/Course/PHP/
 [DEVU - Bootstrap Fundamentals]: https://devu.com/courses/bootstrap-4-fundamentals
