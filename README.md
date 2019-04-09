@@ -62,7 +62,7 @@ and my development through the eyes of [TRELLO](https://trello.com/b/OIZp4RNd/de
 | ![Completed][Completed]     |  Aug'16     | [CODECADEMY - HTML & CSS]                                       |                           |                |
 | ![Completed][Completed]     |  Apr'14     | [DEVU - HTML & CSS Fundamentals]                                | [Bob Tabor]               |                |
 | ![Completed][Completed]     |  Mar'14     | [STANFORD ONLINE - Computer Science CS101]                      | [Nick Parlante]           | [Link 01]      |
-| ![In Progress][In Progress] |             | [INTERNETING IS HARD - Web development tutorials]               |                           |                |
+| ![In Progress][In Progress] |             | [INTERNETING IS HARD - Web Development Tutorials]               |                           |                |
 | ![In Progress][In Progress] |             | [FREECODECAMP - Responsive Web Design (300 hours)]              | [Quincy Larson]           |                |
 | ![In Progress][In Progress] |             | [UDEMY - Advanced CSS and Sass: #Flexbox, Grid, Animations ...] | [Jonas Schmedtmann]       |                |
 | ![Soon][Soon]               |             | [WES BOS - What The Flexbox]                                    | [Wes Bos]                 |                |
