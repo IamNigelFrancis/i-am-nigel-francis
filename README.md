@@ -1,10 +1,10 @@
 
 # My Learning Tracker 
 
-A complete log of my web development skills, learning, resources, highlights, interests, and everything to do with my learning. It's a way to keep track, organise, and share my learning.
+A complete log of my web development skills, learning, resources, highlights, interests, and everything to do with my learning. Keep track, organise, and share my track! 🥰
 
-For my full portfolio click [IAMNIGELFRANCIS](https://iamnigelfrancis.com/projects.html) 
-and my development through the eyes of [TRELLO](https://trello.com/b/OIZp4RNd/development) 
+For my full portfolio of projects to date [IAMNIGELFRANCIS](https://iamnigelfrancis.com/projects.html) 
+and my development planner through the eyes of [TRELLO](https://trello.com/b/OIZp4RNd/development) 
 
 ## Skills
 
@@ -130,7 +130,7 @@ And here is a chronological log of the highlights of my learning:
 
 I'm currently interested in/excited about:
 
-+ Advanced CSS
++ Advanced CSS & SASS
 + CSS Grid & Flex-box
 + JavaScript
 
