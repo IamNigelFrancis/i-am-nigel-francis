@@ -3,7 +3,8 @@
 
 A complete log of my web development skills, learning, resources, highlights, interests, and everything to do with my learning. It's a way to keep track, organise, and share my learning.
 
-[For my full portfolio click here](https://iamnigelfrancis.com/projects.html) 
+For my full portfolio click [IAMNIGELFRANCIS](https://iamnigelfrancis.com/projects.html) 
+and my development through the eyes of [TRELLO](https://trello.com/b/OIZp4RNd/development) 
 
 ## Skills
 
